@@ -5,6 +5,8 @@ Generate shell commands from natural-language prompts without leaving your termi
 ## Key idea
 
 Ask the tool a question like "create a new React app with TypeScript and Tailwind" and it returns the appropriate command(s) ready to run. The goal is speed and convenience — not perfect automation. Always review commands before running.
+<img width="647" height="259" alt="The Command Line  interface" src="https://github.com/user-attachments/assets/0799fcda-aa9b-4b55-b0bf-0a47a1264007" />
+
 
 ## Features
 
@@ -44,13 +46,13 @@ This project is intentionally lightweight. Typical dependencies you may see in `
 Install them with:
 
 ```powershell
-npm install axios dotenv inquirer
+npm install openai chalk commander ora dotenv inquirer figlet
 ```
 
 or with yarn:
 
 ```powershell
-yarn add axios dotenv inquirer
+yarn add  openai chalk commander ora dotenv inquirer figlet
 ```
 
 ## .env format
@@ -61,14 +63,10 @@ Example `.env`:
 
 ```
 # LLM provider API key (example: OpenAI)
-LLM_PROVIDER=openai
 OPENAI_API_KEY=sk-REPLACE_ME
 
-# Default shell to target (powershell, bash, zsh)
-DEFAULT_SHELL=powershell
+Note:"The code is designed only to accept OpenAi API keys as of 11-11-2025. Updates will be made going further"
 
-# Optional: preferred editor when editing a suggested command (e.g. code, notepad)
-EDITOR=notepad
 ```
 
 Notes:
@@ -83,7 +81,7 @@ Basic flow:
 1. Run the CLI.
 2. Enter a natural-language prompt describing the command you want.
 3. The tool returns one or more candidate commands and a short explanation.
-4. You can accept and copy the command, edit it inline, or ask for alternatives.
+
 
 Example (conceptual):
 
@@ -94,7 +92,6 @@ node index.js
 Suggested command:
 npx create-react-app my-app --template typescript
 
-[e]dit / [r]un / [c]opy / [a]sk again >
 ```
 
 The CLI will prompt and let you pick an action.
@@ -181,14 +178,7 @@ Contributions welcome. Suggested starting tasks:
 
 ## License
 
-Choose and add a license (MIT is a common choice for small tools).
+Will be added later> Please contact the owner of teh repository for questions if  any
 
-## Final notes
 
-This README is intentionally pragmatic and designed to help you get started quickly. If you'd like, I can also:
-
-- Add a sample `.gitignore` entry for `.env` and `.cli-index.json`.
-- Generate a minimal `index.js` interactive example that demonstrates prompt -> suggested command -> edit -> copy flow.
-
-If you want that, tell me which provider you'd like to target first (OpenAI, or a local runtime like Ollama) and I will scaffold the example.
 
