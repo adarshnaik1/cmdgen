@@ -5,7 +5,7 @@ Generate shell commands from natural-language prompts without leaving your termi
 ## Key idea
 
 Ask the tool a question like "create a new React app with TypeScript and Tailwind" and it returns the appropriate command(s) ready to run. The goal is speed and convenience — not perfect automation. Always review commands before running.
-<img width="647" height="259" alt="The Command Line  interface" src="https://github.com/user-attachments/assets/0799fcda-aa9b-4b55-b0bf-0a47a1264007" />
+
 
 
 ## Features
@@ -76,17 +76,8 @@ Create a `.env` file in the project root with your OpenAI API key:
 # OpenAI API key (required)
 OPENAI_API_KEY=sk-your-actual-openai-api-key-here
 
-<<<<<<< HEAD
 # Optional: Default shell preference (currently optimized for Windows)
 DEFAULT_SHELL=powershell
-=======
-```
-# LLM provider API key (example: OpenAI)
-OPENAI_API_KEY=sk-REPLACE_ME
-
-Note:"The code is designed only to accept OpenAi API keys as of 11-11-2025. Updates will be made going further"
-
->>>>>>> f50dba6b842183228037ada0caeb94bf45703095
 ```
 
 **Important notes:**
@@ -99,18 +90,11 @@ Note:"The code is designed only to accept OpenAi API keys as of 11-11-2025. Upda
 
 Basic flow:
 
-<<<<<<< HEAD
 1. Run the CLI with your prompt: `node index.js "your request"`
 2. The tool generates a suggested command using AI
 3. You can edit the command inline with full cursor navigation (arrows, backspace, Home/End)
 4. Confirm whether to execute the final command
 5. The command runs and shows output with status indicators
-=======
-1. Run the CLI.
-2. Enter a natural-language prompt describing the command you want.
-3. The tool returns one or more candidate commands and a short explanation.
-
->>>>>>> f50dba6b842183228037ada0caeb94bf45703095
 
 Example usage:
 
@@ -123,7 +107,6 @@ node index.js "create a new React app with TypeScript"
  | |___| | | | | | (_| | |_| |  __/ | | |
   \____|_| |_| |_|\__,_|\____|___|_| |_|
 
-<<<<<<< HEAD
 🚀 Welcome to MyCLI!
 
 ✓ Suggested Command:
@@ -133,8 +116,6 @@ Edit the command below (use ←→ arrows, backspace, Home/End, etc.):
 Command: npx create-react-app my-awesome-app  # User can edit inline
 
 ? Do you want to execute this command? (y/N)
-=======
->>>>>>> f50dba6b842183228037ada0caeb94bf45703095
 ```
 
 ## Safety & best practices

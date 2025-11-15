@@ -14,7 +14,7 @@ const program = new Command();
 dotenv.config();
 
 
-const logoText = figlet.textSync("CmdGen", {
+const logoText = figlet.textSync("CmdSeek", {
   font: "Standard", // try 'Ghost', 'Slant', 'Big', etc.
   horizontalLayout: "default",
   verticalLayout: "default",
@@ -23,7 +23,7 @@ console.log(chalk.cyan(logoText));
 console.log(chalk.green("🚀 Welcome to MyCLI!"));
 
 program
-    .name("cmdgen")
+    .name("cmdseek")
     .description("suggests terminal commands based on natural language prompts")
     .version('1.0.0');
 
