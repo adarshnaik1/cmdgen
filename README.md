@@ -7,7 +7,7 @@ Generate shell commands from natural-language prompts without leaving your termi
 Ask the tool a question like "create a new React app with TypeScript and Tailwind" and it returns the appropriate command(s) ready to run. The goal is speed and convenience — not perfect automation. Always review commands before running.
 
 
-<img width="1362" height="419" alt="image" src="https://github.com/user-attachments/assets/9e970bf3-326c-4d66-9ee1-5433e767bb4a" />
+<img width="1362" height="419" alt="image" src="https://github.com/user-attachments/assets/9e970bf3-326c-4d66-9ee1-5433e767bb4a" style="border-radius 10px;" />
 
 
 
